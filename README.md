@@ -3,7 +3,7 @@
 # coliseum
 
 [![Build Status](https://travis-ci.org/signebedi/coliseum.svg?branch=master)](https://travis-ci.org/signebedi/coliseum)
-[![Inline docs](https://readthedocs.org/projects/pip/badge/?version=latest&style=flat)](https://coliseum.readthedocs.io/en/latest/)
+[![Documentation Status](https://readthedocs.org/projects/coliseum/badge/?version=latest)](https://coliseum.readthedocs.io/en/latest/?badge=latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 a simple, turn-based command line game in python
