@@ -28,5 +28,5 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - basic gameplay
 
-[Unreleased]: https://github.com/signebedi/mercutio/compare/1.0.0...HEAD
-[1.0.0]: https://github.com/signebedi/mercutio/releases/tag/1.0.0
+[Unreleased]: https://github.com/signebedi/coliseum/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/signebedi/coliseum/releases/tag/1.0.0
