@@ -1,3 +1,5 @@
+"""player.py: primary source file for coliseum, a simple, turn-based command line game in python"""
+
 import time, colorama, os, random, pickle
 from colorama import Fore, Back, Style 
 

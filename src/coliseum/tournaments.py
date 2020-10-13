@@ -1,3 +1,5 @@
+"""tournaments.py: a set of tournaments the player can fight in coliseum, a simple, turn-based command line game in python"""
+
 tournaments = [
     {
         'name': 'belly-flop cup',

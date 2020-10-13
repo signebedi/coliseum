@@ -1,4 +1,4 @@
-"""__main__.py: execution script for coliseum, a simple, turn-based command line game in python"""
+"""__init__.py: execution script for coliseum, a simple, turn-based command line game in python"""
 
 import time, colorama, os, random
 from colorama import Fore, Back, Style 
