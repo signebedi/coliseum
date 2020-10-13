@@ -19,7 +19,6 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - better balancing for battles
 - additional tests
-- additional documentation
 - better tournaments
 
 ### Fixed
@@ -27,6 +26,7 @@ Git commits will follow these conventions (with major conventions bolded):
 
 ## [1.0.2] - 2020-10-13
 ### Added
+- additional documentation
 
 ## [1.0.1] - 2020-10-13
 ### Added
