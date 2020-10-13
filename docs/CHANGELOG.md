@@ -20,6 +20,7 @@ Git commits will follow these conventions (with major conventions bolded):
 - better balancing for battles
 - additional tests
 - additional documentation
+- make an executable to run the game
 
 ### Fixed
 - tournament battles still provide bounty even when player loses
