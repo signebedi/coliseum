@@ -11,4 +11,4 @@ a simple, turn-based command line game in python
 Read the docs at [coliseum.readthedocs.io/en/latest/](https://coliseum.readthedocs.io/en/latest/).
 
 ---
-Copyright (c) 2020 Signe Janoska-Bedi and Jamey
+Copyright (c) 2020 Signe Janoska-Bedi and Jamey Kane
