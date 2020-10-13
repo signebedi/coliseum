@@ -1,0 +1,15 @@
+site_name: Coliseum
+
+repo_url: https://github.com/signebedi/coliseum
+
+theme:
+    name: readthedocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - python
+
+nav:
+    - Getting Started: 'index.md'
+    - Gameplay: 'gameplay.md'
+    - Changelog: 'CHANGELOG.md'
