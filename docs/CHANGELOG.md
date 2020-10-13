@@ -18,6 +18,8 @@ Git commits will follow these conventions (with major conventions bolded):
 ## [Unreleased]
 ### Added
 - better balancing for battles
+- additional tests
+- additional documentation
 
 ### Fixed
 - tournament battles still provide bounty even when player loses
