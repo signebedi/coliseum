@@ -1,9 +1,10 @@
-![gladiator gif](docs/cropped.gif)
+![1](docs/cropped.gif)
 
 # coliseum
 
 [![Build Status](https://travis-ci.org/signebedi/coliseum.svg?branch=master)](https://travis-ci.org/signebedi/coliseum)
 [![Documentation Status](https://readthedocs.org/projects/coliseum/badge/?version=latest)](https://coliseum.readthedocs.io/en/latest/?badge=latest)
+[![PyPI](https://img.shields.io/pypi/v/coliseum)](https://pypi.org/project/coliseum/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 a simple, turn-based command line game in python
