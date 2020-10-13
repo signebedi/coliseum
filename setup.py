@@ -2,9 +2,9 @@ from glob import glob
 import setuptools, re, os
 
 with open("README.md", "r") as f:
-    LONG_DESCRIPTION = re.sub(r'\!\[cropped dragon gif\]\(docs\/cropped.gif\)', '', f.read()) # substitute out the gif image
-# based on https://stackoverflow.com/questions/458550/standard-way-to-embed-version-into-python-package
+    LONG_DESCRIPTION = re.sub(r'\!\[gladiator gif\]\(docs\/cropped.gif\)', '', f.read()) # substitute out the gif image
 
+# based on https://stackoverflow.com/questions/458550/standard-way-to-embed-version-into-python-package
 with open(os.path.join('src', 'coliseum', '_version.py')) as f:
     versionstr = f.read()
     regex = r"^__version__ = ['\"]([\d\.]*)['\"]"

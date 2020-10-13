@@ -20,18 +20,19 @@ Git commits will follow these conventions (with major conventions bolded):
 - better balancing for battles
 - additional tests
 - additional documentation
+- better tournaments
 
 ### Fixed
 - tournament battles still provide bounty even when player loses
 
 ## [1.0.2] - 2020-10-13
 ### Added
-- automated deployment to pypi
 
 ## [1.0.1] - 2020-10-13
 ### Added
 - executable version
 - initial documentation
+- automated deployment to pypi
 
 ## [1.0.0] - 2020-10-13
 ### Added
