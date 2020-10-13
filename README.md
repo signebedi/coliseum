@@ -2,7 +2,7 @@
 
 # coliseum
 
-[![Build Status](https://travis-ci.org/signebedi/coliseum.svg?branch=main)](https://travis-ci.org/signebedi/mercutio)
+[![Build Status](https://travis-ci.org/signebedi/coliseum.svg?branch=main)](https://travis-ci.org/signebedi/coliseum)
 [![Inline docs](https://readthedocs.org/projects/pip/badge/?version=latest&style=flat)](https://coliseum.readthedocs.io/en/latest/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
