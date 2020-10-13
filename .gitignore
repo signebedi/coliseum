@@ -130,3 +130,6 @@ dmypy.json
 
 # github API token
 .github_token
+
+# pypi credentials file
+.pypirc
