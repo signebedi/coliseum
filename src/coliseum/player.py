@@ -81,8 +81,9 @@ class Player:
             else: print('\nUnknown command! Please try again\n')
 
 
-    def tournament(self):
-        from coliseum.tournaments import tournaments
+    def tournament(self, tournaments=None):
+        if not tournaments:
+            from coliseum.tournaments import tournaments
         cmd = input(f'\nWhich tournament do you want to fight in? (options: {[t["name"] for t in tournaments]}) \n> ')
         
         for t in tournaments:
@@ -291,3 +292,25 @@ class Player:
             
             print(f'\nSuccessfully loaded your last save file! {loaded_file}\n')
         except: print('\nNo save file found...\n')
+
+    def load(self):
+        try: 
+            from tournaments import tournaments
+
+            assert isinstance(tournaments['name'], str)
+            assert isinstance(tournaments['type'], str)
+            assert any(['beginner','intermediate','advanced'] == tournaments['type'])
+            assert isinstance(tournaments['enemies'], dict)
+            assert isinstance(tournaments['gold'], int)
+            assert tournaments['won'] == False
+            assert isinstance(tournaments['enemies']['name'], str)
+            assert isinstance(tournaments['enemies']['hp'], int)
+            assert isinstance(tournaments['enemies']['atk'], int)
+            assert isinstance(tournaments['enemies']['def'], int)
+            assert isinstance(tournaments['enemies']['spd'], int)
+            assert isinstance(tournaments['enemies']['gold'], int)
+
+            self.tournament(tournaments)
+
+        except Exception as e:
+            print('\nsorry, could not find a file named tournament.py in the current working directory. See our docs for instructions on adding your own tournaments.\n')
