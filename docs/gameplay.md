@@ -18,7 +18,7 @@ You start the game at level 1, but will face a number of choices to increase you
 
 ## Coliseum Battles and Tournaments
 
-Placeholder
+You can battle individual, randomized enemies in the arena by running the ```battle``` command. You can also choose to fight in a tournament by running the ```tournament``` command, which will allow you to select from pre-determined set of tournaments. You can also load your own tournaments into the game by running the command ```dev-load-tournament```
 
 ## Saving and Loading Games
 
@@ -26,8 +26,8 @@ Coliseum will save to, and load from, a pickle file if you run the command ```sa
 
 ## Visiting the General Store
 
-Placeholder
+To level up your skills and equipment, visit the store by running the ```store``` command. Once you have entered the store, you can purchase upgrades. The cost of these upgrades is equal to the level of your skill and/or equipment. For example, if you have a level 7 constitution, then it will cost you 7 ducats to upgrade to level 8.
 
 ## Working to Earn Gold
 
-Placeholder
+You can work to earn additional ducats using the ```work``` command. You earn one ducat for each second you work. You can work for up to 5 seconds at a time until you need to renew your contract, which is intended to prevent exploits of this system.

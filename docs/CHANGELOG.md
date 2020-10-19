@@ -20,7 +20,6 @@ Git commits will follow these conventions (with major conventions bolded):
 - better balancing for battles
 - additional tests
 - better tournaments
-- allow users to add their own tournaments
 
 ### Fixed
 - tournament battles still provide bounty even when player loses
@@ -28,6 +27,7 @@ Git commits will follow these conventions (with major conventions bolded):
 ## [1.0.2] - 2020-10-19
 ### Added
 - additional documentation
+- allow users to add their own tournaments
 
 ### Fixed
 - problems with initializing battle and tournament mode
