@@ -1,6 +1,6 @@
 """player.py: primary source file for coliseum, a simple, turn-based command line game in python"""
 
-import time, colorama, os, random, pickle
+import time, colorama, os, random, pickle, sys
 from colorama import Fore, Back, Style 
 
 class Player:
@@ -50,6 +50,7 @@ class Player:
         elif i == 'store': self.store()
         elif i == 'save': self.save()
         elif i == 'load': self.load()
+        elif i == 'dev-load-tournament': self.dev_load_tournament()
         elif i == 'battle': self.battle(enemy = self.enemy_generator())
         elif i == 'die': self.dead() # this is a debug command to test that the Player.dead() function works
         elif i == 'hurt': 
@@ -293,24 +294,27 @@ class Player:
             print(f'\nSuccessfully loaded your last save file! {loaded_file}\n')
         except: print('\nNo save file found...\n')
 
-    def load(self):
-        try: 
-            from tournaments import tournaments
+    def dev_load_tournament(self):
+        # try: 
+        filepath = os.path.join(os.getcwd(), 'tournament.py')
+        sys.path.insert(0, filepath)
+        from tournaments import tournaments
+        for tournament in tournaments:
+            assert isinstance(tournament['name'], str)
+            assert isinstance(tournament['type'], str)
+            assert tournament['type'] in ['beginner','intermediate','advanced']
+            assert isinstance(tournament['enemies'], list)
+            assert isinstance(tournament['gold'], int)
+            assert tournament['won'] == False
+            for enemy in tournament['enemies']:
+                assert isinstance(enemy['name'], str)
+                assert isinstance(enemy['hp'], int)
+                assert isinstance(enemy['atk'], int)
+                assert isinstance(enemy['def'], int)
+                assert isinstance(enemy['spd'], int)
+                assert isinstance(enemy['gold'], int)
 
-            assert isinstance(tournaments['name'], str)
-            assert isinstance(tournaments['type'], str)
-            assert any(['beginner','intermediate','advanced'] == tournaments['type'])
-            assert isinstance(tournaments['enemies'], dict)
-            assert isinstance(tournaments['gold'], int)
-            assert tournaments['won'] == False
-            assert isinstance(tournaments['enemies']['name'], str)
-            assert isinstance(tournaments['enemies']['hp'], int)
-            assert isinstance(tournaments['enemies']['atk'], int)
-            assert isinstance(tournaments['enemies']['def'], int)
-            assert isinstance(tournaments['enemies']['spd'], int)
-            assert isinstance(tournaments['enemies']['gold'], int)
+        self.tournament(tournaments)
 
-            self.tournament(tournaments)
-
-        except Exception as e:
-            print('\nsorry, could not find a file named tournament.py in the current working directory. See our docs for instructions on adding your own tournaments.\n')
+        # except Exception as e:
+        #     print(f'\nsorry, could not find a file named tournament.py in the current working directory. See our docs for instructions on adding your own tournaments. {e}\n')

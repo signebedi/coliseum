@@ -1,6 +1,6 @@
 """__init__.py: execution script for coliseum, a simple, turn-based command line game in python"""
 
-import time, colorama, os, random
+import time, colorama, os, random, sys
 from colorama import Fore, Back, Style 
 from coliseum.player import Player
 from coliseum._version import __version__
