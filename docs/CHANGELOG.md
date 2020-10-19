@@ -28,6 +28,7 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - additional documentation
 - allow users to add their own tournaments
+- 'help' option in battle mode
 
 ### Fixed
 - problems with initializing battle and tournament mode

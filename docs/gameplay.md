@@ -18,7 +18,25 @@ You start the game at level 1, but will face a number of choices to increase you
 
 ## Coliseum Battles and Tournaments
 
-You can battle individual, randomized enemies in the arena by running the ```battle``` command. You can also choose to fight in a tournament by running the ```tournament``` command, which will allow you to select from pre-determined set of tournaments. You can also load your own tournaments into the game by running the command ```dev-load-tournament```
+You can battle individual, randomized enemies in the arena by running the ```battle``` command. You can also choose to fight in a tournament by running the ```tournament``` command, which will allow you to select from pre-determined set of tournaments. You can also load your own tournaments into the game by running the command ```dev-load-tournament```, but note that this will search for a file named tournaments.py in your current working directory, the contents of which should follow the following structure:
+
+```python
+tournaments = [
+    {
+        'name': 'TOURNAMENT_NAME_HERE',
+        'type': 'beginner|intermediate|advanced',
+        'enemies': [
+            {'name':'Glardon the Greek', 'hp': 1, 'atk': 1, 'def': 1, 'spd': 1, 'gold': 0},
+            {'name':'Filibert the Frank', 'hp': 17, 'atk': 3, 'def': 3, 'spd': 5, 'gold': 0},
+            {'name':'Estek the Mamluk', 'hp': 28, 'atk': 5, 'def': 5, 'spd': 2, 'gold': 0},
+        ],
+        'gold': 100,
+        'won': False,
+    },
+    ... 
+
+
+```
 
 ## Saving and Loading Games
 
