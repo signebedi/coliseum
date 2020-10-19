@@ -82,7 +82,7 @@ class Player:
 
 
     def tournament(self):
-        from tournaments import tournaments
+        from coliseum.tournaments import tournaments
         cmd = input(f'\nWhich tournament do you want to fight in? (options: {[t["name"] for t in tournaments]}) \n> ')
         
         for t in tournaments:
@@ -103,7 +103,7 @@ class Player:
         # here we import the list of enemies from enemies.py and we
         # develop a random enemy for a given battle
 
-        from enemies import enemy_list
+        from coliseum.enemies import enemy_list
         
         enemy_selector = random.choice(enemy_list)
 
