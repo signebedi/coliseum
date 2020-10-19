@@ -138,7 +138,7 @@ class Player:
         
         while True:
             
-            cmd = input(f'\nYour hp is {self.hp}. The {enemy["name"]}\'s health is {enemy["hp"]} in a {enemy["mode"]} match. what would you like to do?\n> ')
+            cmd = input(f'\nYour hp is {self.hp}. The {enemy["name"]}\'s health is {enemy["hp"]} in a {enemy["mode"]} match. what would you like to do? (type "help" for options)\n> ')
             
             if cmd == 'atk' or cmd == 'a': 
                 player_dmg = self.lvl*random.randint(1, (self.str+self.weapon)) - enemy['def']
