@@ -76,7 +76,7 @@ tournaments = [
          'won': False,
     },
 
-    {'name': 'Hero\'s Cup',
+    {'name': 'Hero Cup',
          'type': 'advanced',
          'enemies': [
              {'name':'Publius Decius Mus', 'hp': 200, 'atk': 20, 'def': 14, 'spd': 17, 'gold': 0},
