@@ -92,12 +92,16 @@ class Player:
                 print(f'\nYou have opted to fight in the {cmd} and your enemies are {", ".join([e["name"] for e in t["enemies"]])}\n')
 
                 for enemy in t["enemies"]:
-                    self.battle(enemy, battle_type='tournament')
-                    
-                self.gold += t["gold"]
-                t["won"] = True
-                self.victories.append(t['name'])
-                print(f'\nYou won the {t["name"]} and earned {t["gold"]} ducats!\n')
+                    if self.battle(enemy, battle_type='tournament'):
+                        player_lost_tournament = True
+                        break
+                if player_lost_tournament:
+                    print(f'\nYou lost the {cmd}\n')
+                else:    
+                    self.gold += t["gold"]
+                    t["won"] = True
+                    self.victories.append(t['name'])
+                    print(f'\nYou won the {t["name"]} and earned {t["gold"]} ducats!\n')
             # else: print('\nInvalid tournament\n')
 
     def enemy_generator(self):
@@ -178,6 +182,9 @@ class Player:
                 
                 # if this is a spar
                 if self.hp <= 0: 
+                    if battle_type == 'tournament':
+                        return True # if this returns true, then break the underlying loop in tournament mode to prevent payoff
+
                     if enemy['mode'] == 'spar':
                         self.hp = 1
                         self.gold -= enemy['gold']
