@@ -1,5 +1,5 @@
 # in addition to being able to run the game in debug mode, this script also provides
-# a debut() decorator that can be used to audit the output of each function
+# a debug() decorator that can be used to audit the output of each function
 
 import time, colorama, os, random, sys
 from colorama import Fore, Back, Style 
