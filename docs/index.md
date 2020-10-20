@@ -18,15 +18,15 @@ Your player will have a number of stats, most of which can be improved by paying
 
 Skills
 
-- Strength: increases damage dealt
-- Constitution: increases health points
-- Speed: increases liklihood of dodging attacks
+- Strength: increases effectiveness of player's attacks
+- Constitution: decreases effectiveness of enemy's attacks
+- Speed: decreases the liklihood of enemy's attacks landing
 
 Equipment
 
-- Weapon: increases damage dealt
-- Armor: reduces damage taken
-- Shield: reduces damage taken
+- Weapon: increases effectiveness of player's attacks
+- Armor: decreases effectiveness of enemy's attacks
+- Shield: decreases effectiveness of enemy's attacks
 
 ## Philosophy
 

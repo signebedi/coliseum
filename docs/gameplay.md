@@ -23,19 +23,18 @@ You can battle individual, randomized enemies in the arena by running the ```bat
 ```python
 tournaments = [
     {
-        'name': 'TOURNAMENT_NAME_HERE',
-        'type': 'beginner|intermediate|advanced',
-        'enemies': [
+        'name': 'TOURNAMENT_NAME_HERE', # naming convention: capitalized, no special characters, eg. Tutorial Cup
+        'type': 'beginner|intermediate|advanced', # simply for administrative purposes, record the difficulty level
+        'enemies': [ # this element should store a list of enemy dictionaries
             {'name':'NAME', 'hp': INT, 'atk': INT, 'def': INT, 'spd': INT, 'gold': INT},
             {'name':'NAME', 'hp': INT, 'atk': INT, 'def': INT, 'spd': INT, 'gold': INT},
             {'name':'NAME', 'hp': INT, 'atk': INT, 'def': INT, 'spd': INT, 'gold': INT},
         ],
         'gold': INT,
-        'won': False,
+        'won': False, # this determines at runtime whether a character has beaten this tournament before
     },
     ... ADDITIONAL TOURNAMENTS CAN BE ADDED HERE ...
-
-
+}
 ```
 
 ## Saving and Loading Games
