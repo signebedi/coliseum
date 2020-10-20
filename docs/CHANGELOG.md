@@ -19,17 +19,15 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - better balancing for battles
 - additional tests
+- additional tournaments
 
 
 ## [1.0.3] - 2020-10-20
-### Added
-- better tournaments
-
-### Removed
-- Belly-Flop cup from tournament list
+### Changed
+- names and rewards for tournaments
 
 ### Fixed
-- tournament battles still provide bounty even when player loses
+- tournament battles no longer provide bounty even when player loses
 
 ## [1.0.2] - 2020-10-19
 ### Added

@@ -12,7 +12,6 @@ tournaments = [
         'gold': 10,
         'won': False,
     },
-    
     {
         'name': 'Historical Cup',
         'type': 'beginner',
