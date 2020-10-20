@@ -9,7 +9,7 @@ tournaments = [
             {'name':'Filibert the Frank', 'hp': 17, 'atk': 3, 'def': 3, 'spd': 5, 'gold': 0},
             {'name':'Estek the Mamluk', 'hp': 28, 'atk': 5, 'def': 5, 'spd': 2, 'gold': 0},
         ],
-        'gold': 25,
+        'gold': 10,
         'won': False,
     },
     
