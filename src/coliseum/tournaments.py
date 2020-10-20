@@ -9,7 +9,7 @@ tournaments = [
             {'name':'Filibert the Frank', 'hp': 17, 'atk': 3, 'def': 3, 'spd': 5, 'gold': 0},
             {'name':'Estek the Mamluk', 'hp': 28, 'atk': 5, 'def': 5, 'spd': 2, 'gold': 0},
         ],
-        'gold': 100,
+        'gold': 25,
         'won': False,
     },
     
@@ -22,7 +22,7 @@ tournaments = [
             {'name':'Plutarch', 'hp': 40, 'atk': 5, 'def': 5, 'spd': 4, 'gold': 0},
             {'name':'Aulus Hirtius', 'hp': 55, 'atk': 7, 'def': 6, 'spd': 6, 'gold': 0},
         ],
-        'gold': 250,
+        'gold': 50,
         'won': False,
      },
     
@@ -35,7 +35,7 @@ tournaments = [
             {'name':'Euclid', 'hp': 42, 'atk': 4, 'def': 6, 'spd': 5, 'gold': 0},
             {'name':'Archimedes of Syracuse', 'hp': 58, 'atk': 7, 'def': 7, 'spd': 7, 'gold': 0},
         ],
-        'gold': 250,
+        'gold': 50,
         'won': False,
      },
     
@@ -48,7 +48,7 @@ tournaments = [
              {'name':'Aristophanes', 'hp': 38, 'atk': 5, 'def': 5, 'spd': 4, 'gold': 0},
              {'name':'Sophocles', 'hp': 55, 'atk': 8, 'def': 5, 'spd': 7, 'gold': 0},
          ],
-         'gold': 250,
+         'gold': 50,
          'won': False,
      },
     
@@ -61,7 +61,7 @@ tournaments = [
              {'name':'Hannibal Barca', 'hp': 100, 'atk': 12, 'def': 12, 'spd': 14, 'gold': 0},
              {'name':'Mithridates VI of Pontus', 'hp': 150, 'atk': 15, 'def': 15, 'spd': 15, 'gold': 0},        
          ],
-         'gold': 500,
+         'gold': 75,
          'won': False,
      }, 
 
@@ -73,7 +73,7 @@ tournaments = [
              {'name':'Vercingetorix', 'hp': 140, 'atk': 11, 'def': 8, 'spd': 12, 'gold': 0},
              {'name':'Arminius', 'hp': 175, 'atk': 17, 'def': 14, 'spd': 16, 'gold': 0},        
          ],
-         'gold': 500,
+         'gold': 75,
          'won': False,
     },
 
@@ -86,7 +86,7 @@ tournaments = [
              {'name':'Gnaeus Pompey Magnus', 'hp': 500, 'atk': 30, 'def': 30, 'spd': 30, 'gold': 0},        
              {'name':'Gaius Julius Caesar', 'hp': 1000, 'atk': 35, 'def': 25, 'spd': 100, 'gold': 0},        
          ],
-         'gold': 1000,     
+         'gold': 100,     
          'won': False,
     },
 ]
