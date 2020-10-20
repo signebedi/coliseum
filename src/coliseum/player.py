@@ -92,10 +92,11 @@ class Player:
                 print(f'\nYou have opted to fight in the {cmd} and your enemies are {", ".join([e["name"] for e in t["enemies"]])}\n')
 
                 for enemy in t["enemies"]:
-                    if self.battle(enemy, battle_type='tournament'):
-                        player_lost_tournament = True
+                    if self.battle(enemy, battle_type='tournament'): # assess the truth value of each battle and...
+                        player_lost_tournament = True # if returns true, break this loop and set player_lost_tournament to True
                         break
-                if player_lost_tournament:
+
+                if player_lost_tournament: # only give the reward if the player actually wins the tournament
                     print(f'\nYou lost the {cmd}\n')
                 else:    
                     self.gold += t["gold"]
@@ -183,6 +184,8 @@ class Player:
                 # if this is a spar
                 if self.hp <= 0: 
                     if battle_type == 'tournament':
+                        self.hp = 1
+                        print(f'\nThe {enemy["name"]} defeated you\n')
                         return True # if this returns true, then break the underlying loop in tournament mode to prevent payoff
 
                     if enemy['mode'] == 'spar':
