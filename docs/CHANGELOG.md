@@ -19,7 +19,14 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - better balancing for battles
 - additional tests
+
+
+## [1.0.3] - 2020-10-20
+### Added
 - better tournaments
+
+### Removed
+- Belly-Flop cup from tournament list
 
 ### Fixed
 - tournament battles still provide bounty even when player loses
@@ -43,7 +50,8 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - basic gameplay
 
-[Unreleased]: https://github.com/signebedi/coliseum/compare/1.0.2...HEAD
+[Unreleased]: https://github.com/signebedi/coliseum/compare/1.0.3...HEAD
+[1.0.3]: https://github.com/signebedi/coliseum/releases/tag/1.0.2...1.0.3
 [1.0.2]: https://github.com/signebedi/coliseum/releases/tag/1.0.1...1.0.2
 [1.0.1]: https://github.com/signebedi/coliseum/releases/tag/1.0.0...1.0.1
 [1.0.0]: https://github.com/signebedi/coliseum/releases/tag/1.0.0
