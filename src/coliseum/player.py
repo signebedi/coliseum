@@ -211,7 +211,9 @@ class Player:
                 else: print ('\nInsufficient potions\n')
     
             elif cmd == 'run':
-                print(f'\nYou ran away from the {enemy["name"]}\n')
+                print(f'\nYou ran away from the {enemy["name"]} and lost {enemy["gold"]} ducats\n')
+                self.gold -= enemy["gold"]
+                
                 break
 
     def dodge_check(self, enemy_spd):
