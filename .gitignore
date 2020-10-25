@@ -133,3 +133,6 @@ dmypy.json
 
 # pypi credentials file
 .pypirc
+
+# any stray pickle files
+*.pickle

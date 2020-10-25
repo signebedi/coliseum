@@ -91,6 +91,8 @@ class Player:
             if cmd in t["name"]:
                 print(f'\nYou have opted to fight in the {cmd} and your enemies are {", ".join([e["name"] for e in t["enemies"]])}\n')
 
+                player_lost_tournament = False
+                
                 for enemy in t["enemies"]:
                     if self.battle(enemy, battle_type='tournament'): # assess the truth value of each battle and...
                         player_lost_tournament = True # if returns true, break this loop and set player_lost_tournament to True
