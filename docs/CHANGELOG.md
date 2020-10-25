@@ -21,6 +21,9 @@ Git commits will follow these conventions (with major conventions bolded):
 - additional tests
 - additional tournaments
 
+## [1.0.4] - 2020-10-24
+### Fixed
+- bugs in tournament and battle mode
 
 ## [1.0.3] - 2020-10-20
 ### Changed
@@ -48,7 +51,8 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - basic gameplay
 
-[Unreleased]: https://github.com/signebedi/coliseum/compare/1.0.3...HEAD
+[Unreleased]: https://github.com/signebedi/coliseum/compare/1.0.4...HEAD
+[1.0.4]: https://github.com/signebedi/coliseum/releases/tag/1.0.3...1.0.4
 [1.0.3]: https://github.com/signebedi/coliseum/releases/tag/1.0.2...1.0.3
 [1.0.2]: https://github.com/signebedi/coliseum/releases/tag/1.0.1...1.0.2
 [1.0.1]: https://github.com/signebedi/coliseum/releases/tag/1.0.0...1.0.1
