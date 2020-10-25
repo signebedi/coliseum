@@ -211,10 +211,14 @@ class Player:
                 else: print ('\nInsufficient potions\n')
     
             elif cmd == 'run':
-                print(f'\nYou ran away from the {enemy["name"]} and lost {enemy["gold"]} ducats\n')
-                self.gold -= enemy["gold"]
-                
-                break
+              
+                if battle_type == 'tournament':  
+                    print ('\nsorry, but you can\'t run away from a tournament!\n')
+                    
+                else:
+                    print(f'\nYou ran away from the {enemy["name"]} and lost {enemy["gold"]} ducats\n')
+                    self.gold -= enemy["gold"]
+                    break
 
     def dodge_check(self, enemy_spd):
         # do a speed check to see if you dodge an enemy attack
