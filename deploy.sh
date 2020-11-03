@@ -29,7 +29,7 @@ API_JSON=$(printf '{"tag_name": "%s","target_commitish": "%s","name": "coliseum 
 API_RESPONSE_STATUS=$(curl --data "$API_JSON" -s -i -H "Authorization: token $GITHUB_ACCESS_TOKEN" https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/releases)
 echo "$API_RESPONSE_STATUS"
 
-git pull origin # then we pull the remote origin to ensure our internal versioning is correct
+git pull origin # then we pull the remote origin to ensure our local versioning is correct
 
 # finally deploy to pypi and clean up
 python setup.py sdist bdist_wheel
