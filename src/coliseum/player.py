@@ -18,7 +18,7 @@ class Player:
         
         for item in header: print(item)
     
-        print('\nWelcome to the Coliseum. Earn ducats in the Work Room, buy equipment in the Shop, and battle for glory in the Arena!')
+        print('\nThe great Greek hero, Hercules, is inviting you to fight in his new golden coliseum! He is growing old, and wishes to see one last fight before he is laid to rest. He hashundreds of fighters from both Greece and Rome, that have all trained heavily their entire life - just like you! You will have to battle gladiators and knights alike, and it won\'t be easy! Armed with a bronze dagger, you will take on all the foes before you! Good luck, young fighter. You will need it!')
 
         self.lvl = 1
         self.xp = 0
