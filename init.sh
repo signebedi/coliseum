@@ -3,6 +3,7 @@
 # this script should help add an alias to bashrc and ensure that there is a coliseum virtual env containing all its dependencies
 # there are a few areas for this script to be improved:
 # 1. check if there is an alias already existing in .bashrc and, if so, replace it https://unix.stackexchange.com/a/32507
+# 2. should include some boilerplate provisions for the user to delete existing records & do some cleanup to avoid to much bloat/mess/zombie code from this
 
 if [ $VIRTUAL_ENV ]
 
