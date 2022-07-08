@@ -7,7 +7,7 @@
 [![PyPI](https://img.shields.io/pypi/v/coliseum)](https://pypi.org/project/coliseum/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-a simple, turn-based command line game in python
+simple, turn-based, in your TTY 
 
 Read the docs at [coliseum.readthedocs.io/en/latest/](https://coliseum.readthedocs.io/en/latest/).
 
