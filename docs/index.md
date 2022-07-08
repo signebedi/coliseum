@@ -3,7 +3,7 @@
 
 ![gladiator gif](cropped.gif)
 
-a simple, turn-based command line game in python
+simple, turn-based, in your TTY 
 
 See the GitHub repo at [github.com/signebedi/coliseum](https://github.com/signebedi/coliseum).
 
