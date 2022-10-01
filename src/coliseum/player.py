@@ -85,6 +85,7 @@ class Player:
     def tournament(self, tournaments=None):
         if not tournaments:
             from coliseum.tournaments import tournaments
+        
         OPTS = [f'{t["name"]} ({t["short_name"]})' for t in tournaments]
         cmd = input(f'\nWhich tournament do you want to fight in? (options: {", ".join(OPTS)}) \n> ')
         # cmd = input(f'\nWhich tournament do you want to fight in? (options: {", ".join([f"{t['name']} ({t['short_name']})"] for t in tournaments])}) \n> ')
@@ -101,7 +102,7 @@ class Player:
                         break
 
                 if player_lost_tournament: # only give the reward if the player actually wins the tournament
-                    print(f'\nYou lost the {cmd}\n')
+                    print(f'\nYou lost the {t["name"]}\n')
                 else:    
                     self.gold += t["gold"]
                     t["won"] = True
