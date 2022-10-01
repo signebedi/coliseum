@@ -85,11 +85,13 @@ class Player:
     def tournament(self, tournaments=None):
         if not tournaments:
             from coliseum.tournaments import tournaments
-        cmd = input(f'\nWhich tournament do you want to fight in? (options: {", ".join([t["name"] for t in tournaments])}) \n> ')
-        
+        OPTS = [f'{t["name"]} ({t["short_name"]})' for t in tournaments]
+        cmd = input(f'\nWhich tournament do you want to fight in? (options: {", ".join(OPTS)}) \n> ')
+        # cmd = input(f'\nWhich tournament do you want to fight in? (options: {", ".join([f"{t['name']} ({t['short_name']})"] for t in tournaments])}) \n> ')
+
         for t in tournaments:
-            if cmd in t["name"]:
-                print(f'\nYou have opted to fight in the {cmd} and your enemies are {", ".join([e["name"] for e in t["enemies"]])}\n')
+            if cmd == t["short_name"]:
+                print(f'\nYou have opted to fight in the {t["name"]} and your enemies are {", ".join([e["name"] for e in t["enemies"]])}\n')
 
                 player_lost_tournament = False
                 

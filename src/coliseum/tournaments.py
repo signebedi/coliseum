@@ -3,6 +3,7 @@
 tournaments = [
     {
         'name': 'Tutorial Cup',
+        'short_name': 'tutorial',
         'type': 'beginner',
         'enemies': [
             {'name':'Glardon the Greek', 'hp': 1, 'atk': 1, 'def': 1, 'spd': 1, 'gold': 0},
@@ -14,6 +15,7 @@ tournaments = [
     },
     {
         'name': 'Historical Cup',
+        'short_name': 'historical',
         'type': 'beginner',
         'enemies': [
             {'name':'Titus Livius', 'hp': 25, 'atk': 3, 'def': 3, 'spd': 3, 'gold': 0},
@@ -27,6 +29,7 @@ tournaments = [
     
     {
         'name': 'Mathematical Cup',
+        'short_name': 'mathematical',
         'type': 'beginner',
         'enemies': [
             {'name':'Thales', 'hp': 28, 'atk': 3, 'def': 4, 'spd': 4, 'gold': 0},
@@ -40,6 +43,7 @@ tournaments = [
     
     {
          'name': 'Dramatist Cup',
+         'short_name': 'dramatist',
          'type': 'beginner',
          'enemies': [
              {'name':'Aeschylus', 'hp': 23, 'atk': 4, 'def': 3, 'spd': 4, 'gold': 0},
@@ -53,6 +57,7 @@ tournaments = [
     
     {
          'name': 'Hellenic Cup',
+         'short_name': 'hellenic',
          'type': 'intermediate',
          'enemies': [
              {'name':'Pyrrhus of Epirus', 'hp': 65, 'atk': 7, 'def': 8, 'spd': 8, 'gold': 0},
@@ -64,7 +69,9 @@ tournaments = [
          'won': False,
      }, 
 
-    {'name': 'Barbarian Cup',
+    {
+        'name': 'Barbarian Cup',
+        'short_name': 'barbarian',
          'type': 'intermediate',
          'enemies': [
              {'name':'Jugurtha', 'hp': 85, 'atk': 8, 'def': 6, 'spd': 8, 'gold': 0},
@@ -76,7 +83,9 @@ tournaments = [
          'won': False,
     },
 
-    {'name': 'Hero Cup',
+    {
+        'name': 'Hero Cup',
+        'short_name': 'hero',
          'type': 'advanced',
          'enemies': [
              {'name':'Publius Decius Mus', 'hp': 200, 'atk': 20, 'def': 14, 'spd': 17, 'gold': 0},
