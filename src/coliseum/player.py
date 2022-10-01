@@ -201,7 +201,7 @@ class Player:
     
             elif cmd == 'stats': self.stats()
             
-            elif cmd == 'help': print('\nOPTIONS:\natk\nstats\nrun\n')
+            elif cmd == 'help': print('\nOPTIONS:\na(tk)\nstats\npotion\nrun\n')
             
             elif cmd == 'potion': 
                 if self.potions > 0:
