@@ -83,21 +83,24 @@ class Player:
 
 
     def tournament(self, tournaments=None):
-        if not tournaments:
-            from coliseum.tournaments import tournaments
+        # if not tournaments:
+        from coliseum.tournaments import tournaments 
         
         OPTS = [f'{t["name"]} ({t["short_name"]})' for t in tournaments]
         cmd = input(f'\nWhich tournament do you want to fight in? (options: {", ".join(OPTS)}) \n> ')
         # cmd = input(f'\nWhich tournament do you want to fight in? (options: {", ".join([f"{t['name']} ({t['short_name']})"] for t in tournaments])}) \n> ')
 
         for t in tournaments:
-            if cmd == t["short_name"]:
+            # if cmd == t["short_name"]:
+            if cmd == t["short_name"] or cmd == t['name']:
+            # if cmd in t['name'].lower():
                 print(f'\nYou have opted to fight in the {t["name"]} and your enemies are {", ".join([e["name"] for e in t["enemies"]])}\n')
 
                 player_lost_tournament = False
                 
                 for enemy in t["enemies"]:
-                    if self.battle(enemy, battle_type='tournament'): # assess the truth value of each battle and...
+                    temp_enemy = enemy.copy() # we create a mirror of the enemy object to keep the source unchanged (eg. for repeat battles)
+                    if self.battle(temp_enemy, battle_type='tournament'): # assess the truth value of each battle and...
                         player_lost_tournament = True # if returns true, break this loop and set player_lost_tournament to True
                         break
 
