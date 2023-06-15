@@ -136,3 +136,6 @@ dmypy.json
 
 # any stray pickle files
 *.pickle
+
+# app-specific files
+exclude/*
