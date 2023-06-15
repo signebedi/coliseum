@@ -4,7 +4,7 @@ import time, colorama, os, random, pickle, sys
 from colorama import Fore, Back, Style 
 
 class Player:
-    def __init__(self):
+    def __init__(self, headless=False, ask_load_game=True, player_name=None):
         
         colorama.init(autoreset=True)
         
@@ -15,10 +15,12 @@ class Player:
                     ' | |___| |__| | |____ _| |_ ____) | |____| |__| | |  | |',
                     '  \_____\____/|______|_____|_____/|______|\____/|_|  |_|',
                 ]
+
+        if not headless:
+
+            for item in header: print(item)
         
-        for item in header: print(item)
-    
-        print('\nThe great Greek hero, Hercules, is inviting you to fight in his new golden coliseum! He is growing old, and wishes to see one last fight before he is laid to rest. He hashundreds of fighters from both Greece and Rome, that have all trained heavily their entire life - just like you! You will have to battle gladiators and knights alike, and it won\'t be easy! Armed with a bronze dagger, you will take on all the foes before you! Good luck, young fighter. You will need it!')
+            print('\nThe great Greek hero, Hercules, is inviting you to fight in his new golden coliseum! He is growing old, and wishes to see one last fight before he is laid to rest. He hashundreds of fighters from both Greece and Rome, that have all trained heavily their entire life - just like you! You will have to battle gladiators and knights alike, and it won\'t be easy! Armed with a bronze dagger, you will take on all the foes before you! Good luck, young fighter. You will need it!')
 
         self.lvl = 1
         self.xp = 0
@@ -35,11 +37,22 @@ class Player:
         self.kills = 0
         self.victories = []
         
-        if os.path.exists("save.pickle"):
+        if ask_load_game and os.path.exists("save.pickle"):
             load_game = input('\nDo you want to load a save file? (yes, no; defaults to no)\n')
-            if load_game == 'yes': self.load()
-            else: self.name = input('\nWhat is your character\'s name?\n> ')
-        else: self.name = input('\nWhat is your character\'s name?\n> ')
+            if load_game == 'yes': 
+                self.load()
+            else: 
+                if not player_name:
+                    self.name = input('\nWhat is your character\'s name?\n> ')
+                else:
+                    self.name = player_name
+
+
+        else: 
+            if not player_name:
+                self.name = input('\nWhat is your character\'s name?\n> ')
+            else:
+                self.name = player_name
         
     def input(self):
         i = input('\nWhat would you like to do next? (type "help" for options)\n> ')
