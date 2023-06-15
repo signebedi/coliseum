@@ -6,6 +6,7 @@
 [![PyPI](https://img.shields.io/pypi/v/coliseum?color=brightgreen)](https://pypi.org/project/coliseum/)
 [![Downloads](https://static.pepy.tech/personalized-badge/coliseum?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/coliseum)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
+[![Flask-Signing tests](https://github.com/signebedi/coliseum/workflows/tests/badge.svg)](https://github.com/signebedi/coliseum/actions)
 
 simple, turn-based, in your TTY 
 
