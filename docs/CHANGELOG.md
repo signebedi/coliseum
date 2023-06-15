@@ -20,6 +20,15 @@ Git commits will follow these conventions (with major conventions bolded):
 - better balancing for battles
 - additional tests
 - additional tournaments
+- support for map mode
+
+## [1.0.5] - 2023-06-14
+### Fixed
+- out-of-date requirements
+- broken CI/CD pipeline
+- broken README links
+
+
 
 ## [1.0.4] - 2020-10-24
 ### Fixed
@@ -51,7 +60,8 @@ Git commits will follow these conventions (with major conventions bolded):
 ### Added
 - basic gameplay
 
-[Unreleased]: https://github.com/signebedi/coliseum/compare/1.0.4...HEAD
+[Unreleased]: https://github.com/signebedi/coliseum/compare/1.0.5...HEAD
+[1.0.4]: https://github.com/signebedi/coliseum/releases/tag/1.0.4...1.0.5
 [1.0.4]: https://github.com/signebedi/coliseum/releases/tag/1.0.3...1.0.4
 [1.0.3]: https://github.com/signebedi/coliseum/releases/tag/1.0.2...1.0.3
 [1.0.2]: https://github.com/signebedi/coliseum/releases/tag/1.0.1...1.0.2
