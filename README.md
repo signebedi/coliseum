@@ -12,4 +12,4 @@ simple, turn-based, in your TTY
 Read the docs at [coliseum.readthedocs.io/en/latest/](https://coliseum.readthedocs.io/en/latest/).
 
 ---
-Copyright (c) 2020 Signe Janoska-Bedi and Jamey Kane
+Copyright (c) 2020-23 Signe Janoska-Bedi and Jamey Kane
