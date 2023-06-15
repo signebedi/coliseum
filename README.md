@@ -2,10 +2,10 @@
 
 # coliseum
 
-[![Build Status](https://travis-ci.org/signebedi/coliseum.svg?branch=master)](https://travis-ci.org/signebedi/coliseum)
 [![Documentation Status](https://readthedocs.org/projects/coliseum/badge/?version=stable)](https://coliseum.readthedocs.io/en/latest/?badge=latest)
-[![PyPI](https://img.shields.io/pypi/v/coliseum)](https://pypi.org/project/coliseum/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/coliseum?color=brightgreen)](https://pypi.org/project/coliseum/)
+[![Downloads](https://static.pepy.tech/personalized-badge/coliseum?period=total&units=international_system&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/coliseum)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
 simple, turn-based, in your TTY 
 
