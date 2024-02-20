@@ -1,6 +1,6 @@
 """player.py: primary source file for coliseum, a simple, turn-based command line game in python"""
 
-import time, colorama, os, random, pickle, sys
+import time, colorama, os, random, pickle, sys, math
 from colorama import Fore, Back, Style 
 
 class Player:
@@ -140,7 +140,7 @@ class Player:
         enemy['name'] = enemy_selector['name']
         enemy['difficulty'] = enemy_selector['difficulty']
         
-        enemy['hp'] = (self.lvl + enemy['difficulty']) * 10
+        enemy['hp'] = round((self.lvl + enemy['difficulty']) * 10 * min(math.pow(1.0009, (self.str + self.weapon + self.con)), 500))
         #enemy['hp'] = self.lvl*random.randint(1, (self.lvl*enemy['difficulty'])) + 10
         enemy['atk'] = random.randint(1, (self.lvl*enemy['difficulty'])) + 2
         enemy['def'] = random.randint(1, (self.lvl*enemy['difficulty']))
